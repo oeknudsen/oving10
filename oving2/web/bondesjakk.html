@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bondesjakk</title>
+        <style type="text/css">
+            #bondesjakkbrett { 
+                width:300px;
+                height:300px;
+                border: 3px solid black;
+            }
+            .tabellrute{ 
+                background-color: #ccc;
+            }
+            .playerRed {
+                background-color: red;
+            }
+            .playerGreen {
+                background-color: green;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Spill bondesjakk! </h1>
+        <p>
+            Her kan to personer spille bondesjakk. N&aring;r
+            f&oslash;rstemann (r&oslash;dt) velger rute, klikker han en gang, og
+            n&aring;r andremann (gr&oslash;nt) velger rute, dobbeltklikker han.
+        </p>
+
+        <script src='bondesjakk.js'></script>
+
+        <table id="bondesjakkbrett">
+            <tr>
+                <td class="tabellrute" id="0" onclick="singleClick(id)" ondblclick="doubleClick(id)"></td>
+                <td class="tabellrute" id="1" onclick="singleClick(id)" ondblclick="doubleClick(id)"></td>
+                <td class="tabellrute" id="2" onclick="singleClick(id)" ondblclick="doubleClick(id)"></td>
+            </tr>
+            <tr>
+                <td class="tabellrute" id="3" onclick="singleClick(id)" ondblclick="doubleClick(id)"></td>
+                <td class="tabellrute" id="4" onclick="singleClick(id)" ondblclick="doubleClick(id)"></td>
+                <td class="tabellrute" id="5" onclick="singleClick(id)" ondblclick="doubleClick(id)"></td>
+            </tr> 
+            <tr>
+                <td class="tabellrute" id="6" onclick="singleClick(id)" ondblclick="doubleClick(id)"></td>
+                <td class="tabellrute" id="7" onclick="singleClick(id)" ondblclick="doubleClick(id)"></td>
+                <td class="tabellrute" id="8" onclick="singleClick(id)" ondblclick="doubleClick(id)"></td>
+            </tr>
+        </table>
+
+
+        <p>Du m&aring; laste inn siden p&aring; nytt for &aring; starte et nytt spill.</p>
+    </body>
+</html>
