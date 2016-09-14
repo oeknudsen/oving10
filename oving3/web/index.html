@@ -62,8 +62,13 @@
                         dataType: 'json',
                         success: function(result) {
                             $('#myTable').DataTable().ajax.reload();
+                        },
+                        statusCode: {
+                            404: function() {
+                                alert("Ikke funnet");                                
+                            }
                         }
-                    })
+                    });
                 })
             });
         </script>
